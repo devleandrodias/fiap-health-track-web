@@ -24,20 +24,22 @@
         style="background-color: #ec5a6d;"
       >
         <li class="nav-item">
-          <a class="nav-link text-white" href="../dashboard/index.html"
+          <a
+            class="nav-link text-white"
+            href="../dashboard/index.html"
+            style="text-decoration: none;"
             >Página Inicial</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="../alimentacao/index.html"
-            >Alimentação</a
           >
         </li>
         <li class="nav-item">
           <a
             class="nav-link text-white"
-            href="../exercicios/index.html"
-            style="border-bottom: 1px solid #fff;"
+            href="../alimentacao/index.html"
+            >Alimentação</a
+          >
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="../exercicios/index.html" style="text-decoration: none; border-bottom: 1px solid #fff;"
             >Exercícios</a
           >
         </li>
@@ -48,7 +50,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="../galeria/index.html"
-            >Geleria</a
+            >Galeria</a
           >
         </li>
         <li class="nav-item">
@@ -60,9 +62,85 @@
     </nav>
     <div
       class="container"
-      style="background-color: rgba(236, 90, 109, 0.1); height: 90vh;"
+      style="
+        background-color: rgba(236, 90, 109, 0.1);
+        height: 90vh;
+        border-radius: 15px;
+      "
     >
-      Exercícios
+      <form class="p-5">
+        <div class="form-row mt-5">
+          <div class="form-group col-md-5">
+            <label " for="refeicao">Descrição do exercício</label>
+            <input type="text" class="form-control" id="refeicao" />
+          </div>
+          <div class="form-group col-md-4">
+            <label " for="opcaoRefeicao">Modalidade do exercício</label>
+            <select id="opcaoRefeicao" class="form-control">
+              <option selected>Caminhada</option>
+              <option>Crossfit</option>
+              <option>Kettlebells</option>
+              <option>Yoga</option>
+              <option>Muay Thai</option>
+              <option>Spinning</option>
+              <option>Musculação</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label " for="kcal">Tempo de duração (Min)</label>
+            <input type="number" class="form-control" id="kcal" />
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-block text-white right mt-2"
+          style="background-color: #ec5a6d;"
+        >
+        <strong>
+          Salvar
+        </strong>
+        </button>
+      </form>
+
+      <div class="container-table pl-5 pr-5">
+      <table class="table table-striped table-bordered">
+        <thead class="text-white" style="background-color: #ec5a6d;">
+          <tr>
+            <th scope="col">Descrição</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Quantidade (Kcal)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Caminhada matinal</td>
+            <td>Caminhada</td>
+            <td>45 min</td>
+          </tr>
+          <tr>
+            <td>Treinamento físico funcional de alta intensidade</td>
+            <td>Crossfit</td>
+            <td>1h 12 min</td>
+          </tr>
+          <tr>
+            <td>#ProjetoFitness</td>
+            <td>Academia</td>
+            <td>39 min</td>
+          </tr>
+          <tr>
+            <td>Luta de fim de semana</td>
+            <td>Muay Thai</td>
+            <td>1h</td>
+          </tr>
+          <tr>
+            <th scope="row">Total de tempo de exercício praticado</th>
+            <td colspan="2"> <strong>4h e 41 min</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     </div>
   </body>
 </html>
