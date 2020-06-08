@@ -63,9 +63,82 @@
     </nav>
     <div
       class="container"
-      style="background-color: rgba(236, 90, 109, 0.1); height: 90vh;"
+      style="
+        background-color: rgba(236, 90, 109, 0.1);
+        height: 90vh;
+        border-radius: 15px;
+      "
     >
-      Alimentação
+      <form class="p-5">
+        <div class="form-row mt-5">
+          <div class="form-group col-md-6">
+            <label " for="refeicao">Descrição da refeição</label>
+            <input type="text" class="form-control" id="refeicao" />
+          </div>
+          <div class="form-group col-md-4">
+            <label " for="opcaoRefeicao">Tipo da refeição</label>
+            <select id="opcaoRefeicao" class="form-control">
+              <option selected>Café da manhã</option>
+              <option>Almoço</option>
+              <option>Lanche da tarde</option>
+              <option>Jantar</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label " for="kcal">Kcal da refeição</label>
+            <input type="number" class="form-control" id="kcal" />
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-block text-white right mt-2"
+          style="background-color: #ec5a6d;"
+        >
+        <strong>
+          Salvar
+        </strong>
+        </button>
+      </form>
+
+      <div class="container-table pl-5 pr-5">
+      <table class="table table-striped table-bordered">
+        <thead class="text-white" style="background-color: #ec5a6d;">
+          <tr>
+            <th scope="col">Descrição</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Quantidade (Kcal)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vitamina de frutas com aveia</td>
+            <td>Café da manhã</td>
+            <td>389 Kcal</td>
+          </tr>
+          <tr>
+            <td>Talharim de abobrinha</td>
+            <td>Lanche da tarde</td>
+            <td>134 Kcal</td>
+          </tr>
+          <tr>
+            <td>Salmão grelhado com molho de limão</td>
+            <td>Jantar</td>
+            <td>893 Kcal</td>
+          </tr>
+          <tr>
+            <td>Frango grelhado ao molho de laranja e purê de batatas</td>
+            <td>Almoço</td>
+            <td>129 Kcal</td>
+          </tr>
+          <tr>
+            <th scope="row">Total de Kcal ingeridas na semana</th>
+            <td colspan="2"> <strong>3432 Kcal</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     </div>
   </body>
 </html>
