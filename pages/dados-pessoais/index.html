@@ -60,9 +60,120 @@
     </nav>
     <div
       class="container"
-      style="background-color: rgba(236, 90, 109, 0.1); height: 90vh;"
+      style="background-color: rgba(236, 90, 109, 0.1); height: 100vh;"
     >
-      Dados Pessoais
+      <form class="p-5">
+        <div class="form-row mt-5">
+          <div class="form-group col-md-9">
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nome"
+              placeholder="Digite seu nome..."
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <label for="idade">Idade</label>
+            <input
+              type="number"
+              class="form-control"
+              id="idade"
+              placeholder="Digite sua idade..."
+            />
+          </div>
+        </div>
+
+        <div class="form-row mt-2">
+          <div class="form-group col-md-3">
+            <label for="pesoAtual">Peso atual (Kg)</label>
+            <input
+              type="number"
+              class="form-control"
+              id="pesoAtual"
+              placeholder="Digite seu peso atual..."
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <label for="alturaAtual">Altura atual (m)</label>
+            <input
+              type="number"
+              class="form-control"
+              id="alturaAtual"
+              placeholder="Digite sua altura atual..."
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <label for="objetivo">Objetivo</label>
+            <input
+              type="number"
+              class="form-control"
+              id="objetivo"
+              placeholder="Digite seu objetivo..."
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <label for="objetivo">Sexo</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="gridRadios1"
+                value="option1"
+                checked
+              />
+              <label class="form-check-label" for="gridRadios1">
+                Masuculino
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="gridRadios1"
+                value="option1"
+                checked
+              />
+              <label class="form-check-label" for="gridRadios1">
+                Feminino
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row mt-2">
+          <div class="form-group col-md-6">
+            <label for="foto">Foto de perfil</label>
+            <img
+              src="https://cdn.pixabay.com/photo/2017/08/09/13/35/model-2614569_960_720.jpg"
+              class="img-fluid rounded img-thumbnail"
+              height="500"
+              width="500"
+              alt="Responsive image"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="15"
+            ></textarea>
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-block text-white right mt-3"
+          style="background-color: #ec5a6d;"
+        >
+          <strong>
+            Salvar
+          </strong>
+        </button>
+      </form>
     </div>
   </body>
 </html>
