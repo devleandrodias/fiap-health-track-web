@@ -1,0 +1,16 @@
+.active {
+  border-bottom: 1px solid #fff;
+}
+
+.button-card {
+  background-color: #ec5a6d;
+  color: #fff;
+}
+
+.image-card {
+  height: 150px;
+}
+
+.card-with {
+    width: 12rem;
+}

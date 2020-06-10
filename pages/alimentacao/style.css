@@ -1,0 +1,13 @@
+.background {
+  background-color: rgba(236, 90, 109, 0.1);
+  height: 90vh;
+  border-radius: 15px;
+}
+
+.background-red {
+  background-color: #ec5a6d;
+}
+
+.active {
+  border-bottom: 1px solid #fff;
+}

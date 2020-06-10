@@ -14,28 +14,20 @@
       type="image/gif"
       sizes="16x16"
     />
+    <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health Track - Alimentação</title>
   </head>
   <body>
     <nav>
-      <ul
-        class="nav justify-content-center mb-4 p-2"
-        style="background-color: #ec5a6d;"
-      >
+      <ul class="nav justify-content-center mb-4 p-2 background-red">
         <li class="nav-item">
-          <a
-            class="nav-link text-white"
-            href="../dashboard/index.html"
-            style="text-decoration: none;"
+          <a class="nav-link text-white" href="../dashboard/index.html"
             >Página Inicial</a
           >
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link text-white"
-            href="../alimentacao/index.html"
-            style="text-decoration: none; border-bottom: 1px solid #fff;"
+          <a class="nav-link text-white active" href="../alimentacao/index.html"
             >Alimentação</a
           >
         </li>
@@ -61,22 +53,15 @@
         </li>
       </ul>
     </nav>
-    <div
-      class="container"
-      style="
-        background-color: rgba(236, 90, 109, 0.1);
-        height: 90vh;
-        border-radius: 15px;
-      "
-    >
+    <div class="container background">
       <form class="p-5">
         <div class="form-row mt-5">
           <div class="form-group col-md-5">
-            <label " for="refeicao">Descrição da refeição</label>
+            <label for="refeicao">Descrição da refeição</label>
             <input type="text" class="form-control" id="refeicao" />
           </div>
           <div class="form-group col-md-4">
-            <label " for="opcaoRefeicao">Tipo da refeição</label>
+            <label for="opcaoRefeicao">Tipo da refeição</label>
             <select id="opcaoRefeicao" class="form-control">
               <option selected>Café da manhã</option>
               <option>Almoço</option>
@@ -85,60 +70,58 @@
             </select>
           </div>
           <div class="form-group col-md-3">
-            <label " for="kcal">Kcal da refeição</label>
+            <label for="kcal">Kcal da refeição</label>
             <input type="number" class="form-control" id="kcal" />
           </div>
         </div>
 
         <button
           type="submit"
-          class="btn btn-block text-white right mt-2"
-          style="background-color: #ec5a6d;"
+          class="btn btn-block text-white right mt-2 background-red"
         >
-        <strong>
-          Salvar
-        </strong>
+          <strong>
+            Salvar
+          </strong>
         </button>
       </form>
 
       <div class="container-table pl-5 pr-5">
-      <table class="table table-striped table-bordered">
-        <thead class="text-white" style="background-color: #ec5a6d;">
-          <tr>
-            <th scope="col">Descrição</th>
-            <th scope="col">Tipo</th>
-            <th scope="col">Quantidade (Kcal)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Vitamina de frutas com aveia</td>
-            <td>Café da manhã</td>
-            <td>389 Kcal</td>
-          </tr>
-          <tr>
-            <td>Talharim de abobrinha</td>
-            <td>Lanche da tarde</td>
-            <td>134 Kcal</td>
-          </tr>
-          <tr>
-            <td>Salmão grelhado com molho de limão</td>
-            <td>Jantar</td>
-            <td>893 Kcal</td>
-          </tr>
-          <tr>
-            <td>Frango grelhado ao molho de laranja e purê de batatas</td>
-            <td>Almoço</td>
-            <td>129 Kcal</td>
-          </tr>
-          <tr>
-            <th scope="row">Total de Kcal ingeridas na semana</th>
-            <td colspan="2"> <strong>3432 Kcal</strong></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
+        <table class="table table-striped table-bordered">
+          <thead class="text-white background-red">
+            <tr>
+              <th scope="col">Descrição</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Quantidade (Kcal)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vitamina de frutas com aveia</td>
+              <td>Café da manhã</td>
+              <td>389 Kcal</td>
+            </tr>
+            <tr>
+              <td>Talharim de abobrinha</td>
+              <td>Lanche da tarde</td>
+              <td>134 Kcal</td>
+            </tr>
+            <tr>
+              <td>Salmão grelhado com molho de limão</td>
+              <td>Jantar</td>
+              <td>893 Kcal</td>
+            </tr>
+            <tr>
+              <td>Frango grelhado ao molho de laranja e purê de batatas</td>
+              <td>Almoço</td>
+              <td>129 Kcal</td>
+            </tr>
+            <tr>
+              <th scope="row">Total de Kcal ingeridas na semana</th>
+              <td colspan="2"><strong>3432 Kcal</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </body>
 </html>
